@@ -3,8 +3,10 @@
 ; Title: Assignment 1.4
 ; Author: Chris Bohnet
 ; Date: 3 May 2020
-; Modified By:
+; Modified By: Chris Bohnet
 ; Description: Gateway API
+; Modifications:
+; 5/7 - add a require statement to the app.js file for the api-catalog routes
 ============================================
 
 */
@@ -19,7 +21,7 @@ mongoose.Promise = require('bluebird');
 
 var indexRouter = require('./routes/index');
 //var usersRouter = require('./routes/users');
-
+var apiCatalog = require('./routes/api-catalog');
 var app = express();
 /**
  *
@@ -46,6 +48,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 //app.use('/users', usersRouter);
+app.use('/api', apiCatalog);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
