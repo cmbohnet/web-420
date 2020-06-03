@@ -1,3 +1,15 @@
+/*
+============================================
+; Title: Assignment 1.4
+; Author: Chris Bohnet
+; Date: 5 May 2020
+; Modified By: Chris Bohnet
+; Description: Gateway API index.js
+; Modifications: 
+;
+============================================
+
+*/
 var express = require('express');
 var router = express.Router();
 
