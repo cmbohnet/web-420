@@ -6,6 +6,7 @@
 ; Modified By: Chris Bohnet
 ; Description: User model for Gateway API - responsible for creating User documents and querying database records
 ; 5/21/20 - Add 2 new callback functions, add and getById
+; 6/7/20 - Add a new query for finding individual users by email address.
 ============================================
 
 */
@@ -33,3 +34,7 @@ module.exports.getById = (id, callback) => {
 /**
  Database queries
  */
+module.exports.getOne = (e, callback) => {
+    var query = {email: e};
+    User.findOne(query, callback);
+}

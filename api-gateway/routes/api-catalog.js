@@ -7,6 +7,7 @@
 ; Description: Gateway API
 ; Modifications: 
 ; 5/7 - The api-catalog will host our HTTP request routes.
+; 6/5/20 - all user requests
 ============================================
 
 */
@@ -26,3 +27,8 @@ router.post('/auth/register', auth_controller.user_register);
 router.get('/auth/token', auth_controller.user_token);
 
 module.exports = router;
+
+router.post('/auth/login', auth_controller.user_login);
+
+//logout requests
+router.get('auth/logout', auth_controller.user_logout);
