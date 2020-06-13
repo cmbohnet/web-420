@@ -10,6 +10,7 @@
 ; the messages between our service calls and Mongo database
 ; 5/21/20 implement the user_register and user_token functions
 ; 6/5/20 Handle new login and logout requests.
+; 6/12/20 Remove duplicate functions.
 ============================================
 
 */
@@ -17,16 +18,6 @@ var User = require('../models/user');
 var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
 var config = require('../config')
-
-// Register a new user on POST
-exports.user_register = function(req, res) {
-    res.send('NOT IMPLEMENTED: User registration POST');
-};
-
-// Verify token on GET
-exports.user_token = function(req, res) {
-    res.send('NOT IMPLEMENTED: User token lookup GET');
-};
 
 // Register a new user on POST
 exports.user_register = function(req, res) {
