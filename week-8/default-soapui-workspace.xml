@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="Projects" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="My First Project">C:/Users/chris/bu-webdev/web-420/week-3/My-First-Project-soapui-project.xml</con:project>
+  <con:project name="API Gateway">C:/Users/chris/bu-webdev/web-420/week-6/API-Gateway-soapui-project.xml</con:project>
+  <con:project name="My Second Project">C:/Users/chris/bu-webdev/web-420/week-5/My-Second-Project-soapui-project.xml</con:project>
+  <con:project name="REST Project 2">C:/Users/chris/bu-webdev/web-420/week-5/REST-Project-2-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+</con:soapui-workspace>
